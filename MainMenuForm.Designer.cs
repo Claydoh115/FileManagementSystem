@@ -43,7 +43,8 @@
             // searchButton
             // 
             this.searchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-
+            this.searchButton.Location = new System.Drawing.Point(1397, 48);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(112, 37);
             this.searchButton.TabIndex = 0;
@@ -92,20 +93,28 @@
             this.fileViewer.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.fileViewer.MinimumSize = new System.Drawing.Size(30, 31);
             this.fileViewer.Name = "fileViewer";
-
+            this.fileViewer.Size = new System.Drawing.Size(1553, 667);
             this.fileViewer.TabIndex = 4;
             this.fileViewer.Url = new System.Uri("", System.UriKind.Relative);
             this.fileViewer.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.fileViewer_DocumentCompleted);
             // 
             // textBox1
             // 
-
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(1022, 48);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(356, 31);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Search by name, tag, or folder!";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // searchLabel
             // 
             this.searchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.searchLabel.AutoSize = true;
-
+            this.searchLabel.Location = new System.Drawing.Point(898, 48);
+            this.searchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.searchLabel.Name = "searchLabel";
             this.searchLabel.Size = new System.Drawing.Size(86, 25);
             this.searchLabel.TabIndex = 6;
@@ -115,7 +124,7 @@
             // 
             this.fileDropDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fileDropDown.FormattingEnabled = true;
-
+            this.fileDropDown.Location = new System.Drawing.Point(1022, 102);
             this.fileDropDown.Name = "fileDropDown";
             this.fileDropDown.Size = new System.Drawing.Size(356, 33);
             this.fileDropDown.TabIndex = 7;
@@ -124,7 +133,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-
+            this.button1.Location = new System.Drawing.Point(1397, 102);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 33);
             this.button1.TabIndex = 8;
@@ -136,19 +145,19 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-
+            this.label1.Location = new System.Drawing.Point(898, 105);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "Directory:\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
+            this.ClientSize = new System.Drawing.Size(1579, 877);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.fileDropDown);
@@ -162,7 +171,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "MainMenuForm";
             this.Text = "Main Menu";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenuForm_FormClosed);
             this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
