@@ -48,7 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConnection.cs" />
-
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <Compile Include="ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileForm.designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </Compile>
+>>>>>>> parent of e7efeac... Merge branch 'master' into master
+=======
+>>>>>>> parent of e3eaf5d... This should just go to my branch
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,9 +80,17 @@
     <Compile Include="RegisterForm.designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-
+<<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Resources\User.cs" />
-
+=======
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> parent of e7efeac... Merge branch 'master' into master
+=======
+    <Compile Include="Resources\User.cs" />
+>>>>>>> parent of e3eaf5d... This should just go to my branch
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
