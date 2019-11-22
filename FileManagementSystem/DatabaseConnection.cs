@@ -16,7 +16,7 @@ public class DatabaseConnection
     //Creates a database connection with mysqlconnectionstring
     static MySqlConnection databaseConnection = new MySqlConnection(mySQLConnectionString);
 
-
+    //Fixed
     //Updates to old code
     //=======================================================================================================================================================================================================
 
