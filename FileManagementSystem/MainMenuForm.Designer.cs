@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("This is where searched items will appear!");
             this.searchButton = new System.Windows.Forms.Button();
             this.uploadButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
@@ -107,7 +108,7 @@
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(239, 22);
             this.searchBar.TabIndex = 5;
-            this.searchBar.Text = "Search by name, tag, or folder!";
+            this.searchBar.Text = "Search for a term!";
             // 
             // searchLabel
             // 
@@ -158,6 +159,8 @@
             this.listView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.listView.HideSelection = false;
+            this.listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
             this.listView.Location = new System.Drawing.Point(9, 112);
             this.listView.MultiSelect = false;
             this.listView.Name = "listView";
@@ -166,7 +169,7 @@
             this.listView.TabIndex = 10;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.List;
-            this.listView.ItemActivate += new System.EventHandler(this.listView_ItemActivate);
+            this.listView.DoubleClick += new System.EventHandler(this.listView_DoubleClick);
             // 
             // MainMenuForm
             // 

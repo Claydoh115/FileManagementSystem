@@ -31,9 +31,6 @@ namespace FileManagementSystem
 
 
 
-
-
-
         private void searchButton_Click(object sender, EventArgs e)
         {
             DirectoryInfo currentDir = new DirectoryInfo(fileViewer.Url.AbsolutePath);//Creates DirectoryInfo from the current fileViewer path
@@ -41,7 +38,7 @@ namespace FileManagementSystem
             listView.Items.Clear();//Clears the previous items from the list, would be from the previous search
             foreach(FileInfo file in files)//For each file info, add the diretory name to the list
             {
-                listView.Items.Add(file.Name + ": " + file.FullName);
+                listView.Items.Add(file.DirectoryName);
             }
             listView.Update();//Updates the view of the list once all is done
         }
@@ -119,10 +116,6 @@ namespace FileManagementSystem
             {
                 fileViewer.Url = new Uri($"C:/DSDB/{userAccount.userName}/{changeDir}");
             }
-
-            
-
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -139,6 +132,10 @@ namespace FileManagementSystem
         {
         
         }
-    }
-    
+
+        private void listView_DoubleClick(object sender, EventArgs e)
+        {
+            fileViewer.Url = new Uri(listView.SelectedItems[0].Text);//Sets the view Url to the selected location as displayed in the list
+        }
+    }    
 }
